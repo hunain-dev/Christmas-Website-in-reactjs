@@ -22,7 +22,7 @@ const Contactform = () => {
         >
     <div className="form" >
         <div className="form-container">
-        <h2 >Simple Form</h2>
+        <h2 >Submit your information</h2>
         
         <div className="form-group">
             <label>First Name</label>
@@ -57,7 +57,7 @@ const Contactform = () => {
             />
         </div>
         
-        <button className="black-btn">sumbit info</button>
+        <button className="black-btn">submit now</button>
     </div>
         </div>
        

@@ -15,7 +15,7 @@ const Header = () => {
         <Link to='/Contact'><h3>Contact</h3></Link>  
       </div>
       <div className="right">
-        <IoIosCart />
+      <Link to='/Cart'><IoIosCart /></Link> 
       </div>
     </div>
   )

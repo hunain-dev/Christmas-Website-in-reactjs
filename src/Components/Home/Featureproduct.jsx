@@ -55,7 +55,7 @@ const Featureproduct = () => {
             </div>
             <h3>{elem.h3}</h3>
             <h4>{elem.h4}</h4>
-        <Link to={`/product/${index}`}><button>{elem.detailsbutton}</button></Link>  
+        <Link to={`/Shop/productdetails/${index}`}><button>{elem.detailsbutton}</button></Link>  
 
 
         </div>

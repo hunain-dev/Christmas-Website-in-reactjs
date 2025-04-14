@@ -24,12 +24,7 @@ const Shippingmethods = () => {
             paragh:'Stay in the know with our convenient order tracking, allowing you to follow every step of your purchase journey with ease',
         
         },
-        { 
-            icon: <GiReturnArrow  className='icon' />, 
-            shipping:'Easy Returns',
-            paragh:'Stay in the know with our convenient order tracking, allowing you to follow every step of your purchase journey with ease',
-        
-        }
+    
     ]
   return (
     <div className='Shippingmethods'>

@@ -128,16 +128,14 @@ html, body {
   justify-content: space-between;
 
 }
-.Header .right{
+.Header .right a{
   font-family: actay;
   font-weight: 500;
   font-size: 1.8vw;
   color: white;
+  cursor: pointer;
 
 }
-
-
-
 .Footer{
   width: 100%;
   display: flex;
@@ -187,7 +185,10 @@ html, body {
 
 }
 
+.Footer a{
+  color: #111318;
 
+}
 
 .Home{
   width: 100%;
@@ -196,7 +197,7 @@ html, body {
 }
 
 .Landingpage{
-  height: 85vh;
+  height: 84vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -699,16 +700,17 @@ label {
   margin-bottom: 5px;
   font-weight: 500;
   font-family: actay;
-  margin: 2.5vw 0;
+  margin: 2vw 0;
 
 }
 input {
   width: 100%;
   padding: 10px;
-  border: 1px solid black;
   border-radius: 4px;
-  box-sizing: border-box;
   font-family: actay;
+  border: none;
+  padding: 2vw 2vw;
+
 }
 .black-btn {
   background-color: black;
@@ -733,10 +735,11 @@ input {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 10vw;
+  margin-bottom: 5vw;
 }
 
 .shippingcard{
-  height: 40vh;
+  height: 35vh;
   width: 26%;
   border: 1px solid rgba(0, 0, 0, 0.136);
   border-radius: 2vw;
@@ -747,10 +750,13 @@ input {
 }
 .shippingcard .icon{
   font-size: 2.3vw;
+  color:black;
+  background: none;
+ 
 }
 .shippingcard h4{
-  font-weight: 500;
-  font-size: 1.8vw;
+  font-weight: 400;
+  font-size: 1.5vw;
   margin: 0.4vw 0;
  font-family:LuckiestGuy ;
 }
@@ -760,4 +766,196 @@ input {
   font-size: 1.2vw;
   margin: 0.4vw 0;
  font-family:actay ;
+}
+
+.shopdetails{
+  width: 100%;
+  padding: 1vw 1vw;
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+}
+
+
+.shopdetails .left{
+  height: 100vh;
+  width: 45%;
+  overflow: hidden;
+  border-radius: 1vw;
+
+}
+
+.shopdetails .left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.shopdetails .right{
+  height: 100%;
+  width: 52%;
+  padding: 4vw 1vw;
+
+}
+
+.shopdetails h1{
+  font-family:LuckiestGuy ;
+  font-weight: 500;
+  font-size: 2.3vw;
+  margin-bottom: 1vw;
+
+
+}
+
+.shopdetails h3{
+  font-family:actay ;
+  font-weight: 500;
+  font-size: 1.6vw;
+  margin-bottom: 2vw;
+
+
+
+}
+
+.shopdetails p{
+  font-family:actay ;
+  font-weight: 500;
+  font-size: 1.1vw;
+
+
+
+}
+
+.quantity {
+  height: 6vh;
+  width: 22%;
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.quantity button {
+  height: 100%;
+  width: 25%;
+  border: none;
+  background:none;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity button:hover {
+  background-color: #e0e0e0;
+}
+.quantity-value {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Actay';
+  font-size: 1.5vw;
+  
+}
+.quantity-value h1 {
+  margin: 0;
+font-size: 2vw;
+
+}
+
+.addtocart{
+  width: 100%;
+  margin-top: 2vw;
+  overflow: hidden;
+}
+.addtocart button{
+ padding: 1vw 2vw;
+ border: none;
+ border-radius: 2vw;
+ background-color: #D61616;
+ color: white;
+ cursor: pointer;
+}
+
+.categoryname{
+  margin-top: 1.5vw;
+  color: #111318;
+  margin-bottom: 1vw;
+}
+
+.categoryname h5 span{
+  color: red;
+}
+.categoryname h5{
+  font-weight: 500;
+  font-size: 1vw;
+  font-family: actay;
+}
+
+
+.shippingrules{
+  width: 100%;
+  overflow: hidden;
+  padding: 1vw 1.5vw;
+}
+
+.shippingrules h2{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-bottom: 1vw;
+
+}
+
+
+.shippingrules li{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin: 1vw 0;
+  color: #111318;
+
+}
+
+
+.gaurented{
+  width: 100%;
+  padding: 0.5vw 0;
+  border: 1px solid rgba(0, 0, 0, 0.598);
+}
+
+.gaurented h2{
+
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.4vw;
+  text-align: center;
+}
+
+.gaurented .methodsimages{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gaurented .methodsimages img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.Cart{
+  height: 100vh;
+  width: 100%;
 }
