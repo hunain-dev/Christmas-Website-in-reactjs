@@ -956,6 +956,147 @@ font-size: 2vw;
 
 
 .Cart{
-  height: 100vh;
   width: 100%;
+}
+
+
+.develreditem{
+  width: 100%;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+
+.develreditemleft{
+  height: 30vh;
+  width: 66%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  border-radius: 1vw;
+}
+
+.develreditemlefttop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.486);
+}
+.develreditemlefttop h3{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+
+.develreditemimage {
+  width: 4vw;
+  height: 9vw;
+  border-radius: 0.5vw;
+  overflow: hidden;
+  margin-bottom: 3vw;
+}
+
+.develreditemimage img {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.develreditemleftbottom{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.cartrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Set all columns to equal width */
+.cartrow > * {
+  width: 25%;
+  text-align: center;
+  font-family: actay;
+  font-weight: 500;
+}
+
+/* Image special styling */
+.cartrow .develreditemimage {
+  width: 20%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.5vw;
+  margin-bottom: 3vw;
+}
+
+.cartrow .develreditemimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.develreditemright{
+  height: 55vh;
+  width: 28%;
+  padding: 1vw 1vw;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+
+}
+
+.develreditemright h1{
+font-family: actay;
+font-weight: 500;
+font-size: 2vw;
+text-align: center;
+
+}
+
+.totalprice{
+  margin-top: 2vw;
+  height: 15vh;
+  width: 100%;
+  padding: 1vw 0.2vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: 1px solid  black;
+}
+
+.totalprice p{
+  font-family: actay;
+  font-weight: 500;
+
+}
+
+.develreditemright h3{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin: 1vw 0;
+}
+
+.checkoutbtn {
+  margin-top: 1vw;
+  padding: 1vw 6.5vw;
+  background-color: #D51515;
+  color: white;
+  border: none;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
 }

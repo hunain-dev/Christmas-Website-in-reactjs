@@ -21,7 +21,7 @@ const Alert = () => {
       {showAlert && (
         <div className="Alert">
           <p>
-            This website is for practice only. Orders <strong>will not be processed</strong>.
+           This is a demo store for testing purpose - <strong>no ordered shall be Fulfilled</strong>.
           </p>
           <div className="icon">
             <FaTimes className="crossicon" onClick={() => setCutAlert(true)} />

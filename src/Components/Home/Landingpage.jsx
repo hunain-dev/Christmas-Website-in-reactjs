@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from './Button/Button';
-import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 const Landingpage = ({ name }) => {
   return (

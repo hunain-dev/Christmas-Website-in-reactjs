@@ -1,8 +1,14 @@
-import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useState } from 'react';
+import { CartContext } from '../../Navbar/Cart/Cartcontext';
+import { useContext } from 'react';
 
 const Shopdetails = () => {
+  const { addToCart } = useContext(CartContext);
+
+  const handleAdd = () => {
+    addToCart(product, itemincrement);
+  };
 
   const [itemincrement, setitemdecrement] = useState(0);
 
@@ -341,7 +347,7 @@ const product = obj[paramdata.id]
           <button onClick={increment}>+</button>
         </div>
         <div className="addtocart">
-        <Link to='/Cart'><button >{product.cartbtn}</button></Link>  
+        <Link to='/Cart'><button  onClick={handleAdd} >{product.cartbtn}</button></Link>  
         </div>
         <div className="categoryname">
         <h5>Category  <span>{product.costumes}</span> </h5>
