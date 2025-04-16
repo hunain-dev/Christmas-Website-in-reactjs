@@ -47,6 +47,7 @@ const Cart = () => {
         </div>
 
         {/* Right Side - Cart Total */}
+        
         <div className="develreditemright">
           <h1>Cart Total</h1>
 

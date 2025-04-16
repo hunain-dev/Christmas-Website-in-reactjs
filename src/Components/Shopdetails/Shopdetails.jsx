@@ -4,6 +4,7 @@ import { CartContext } from '../../Navbar/Cart/Cartcontext';
 import { useContext } from 'react';
 
 const Shopdetails = () => {
+  
   const { addToCart } = useContext(CartContext);
 
   const handleAdd = () => {
@@ -11,7 +12,6 @@ const Shopdetails = () => {
   };
 
   const [itemincrement, setitemdecrement] = useState(0);
-
 
   const increment = () => {
     setitemdecrement(itemincrement + 1);

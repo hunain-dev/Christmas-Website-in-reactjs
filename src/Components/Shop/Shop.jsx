@@ -1,6 +1,7 @@
 import React from 'react'
 import Landingpage from '../Home/Landingpage'
-import Shopscards from './shopscards';
+import Shopscards from './Shopscards'
+
 const Shop = () => {
   const Shop = {
     Shopexpereince: 'Shop',

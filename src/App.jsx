@@ -5,7 +5,7 @@ import Aboutus from './Components/About/Aboutus'
 import Shop from './Components/Shop/Shop'
 import Contact from './Components/Contact/Contact'
 import LocomotiveScroll from 'locomotive-scroll';
-import Shopdetails from './Components/Accesseriosdetail/Shopdetails'
+import Shopdetails from './Components/Shopdetails/Shopdetails'
 import Cart from './Navbar/Cart/Cart'
 
 const App = () => {

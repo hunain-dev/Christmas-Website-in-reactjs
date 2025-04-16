@@ -971,7 +971,6 @@ font-size: 2vw;
 }
 
 .develreditemleft{
-  height: 30vh;
   width: 66%;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.486);
@@ -982,8 +981,8 @@ font-size: 2vw;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1vw 2vw;
+  justify-content: space-around;
+  padding: 1vw 1vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.486);
 }
 .develreditemlefttop h3{
@@ -993,27 +992,12 @@ font-size: 2vw;
 }
 
 
-.develreditemimage {
-  width: 4vw;
-  height: 9vw;
-  border-radius: 0.5vw;
-  overflow: hidden;
-  margin-bottom: 3vw;
-}
-
-.develreditemimage img {
-  width: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 .develreditemleftbottom{
-  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+
 }
 
 
@@ -1021,6 +1005,7 @@ font-size: 2vw;
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 0.5vw 0;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -1035,11 +1020,11 @@ font-size: 2vw;
 
 /* Image special styling */
 .cartrow .develreditemimage {
-  width: 20%;
+  height: 12vh;
+  width: 10%;
   margin: 0 auto;
-  overflow: hidden;
   border-radius: 0.5vw;
-  margin-bottom: 3vw;
+  margin-bottom: 1vw;
 }
 
 .cartrow .develreditemimage img {
@@ -1050,9 +1035,9 @@ font-size: 2vw;
 }
 
 .develreditemright{
-  height: 55vh;
   width: 28%;
   padding: 1vw 1vw;
+
   border: 1px solid rgba(0, 0, 0, 0.486);
 
 }
