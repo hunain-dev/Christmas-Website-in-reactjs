@@ -2,7 +2,6 @@ import React from 'react'
 import { FaTruck } from "react-icons/fa";
 import { SiFsecure } from "react-icons/si";
 import { MdOutlineSpatialTracking } from "react-icons/md";
-import { GiReturnArrow } from "react-icons/gi";
 
 const Shippingmethods = () => {
     const obj = [
