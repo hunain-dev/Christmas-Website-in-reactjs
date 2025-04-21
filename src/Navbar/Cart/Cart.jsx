@@ -65,7 +65,9 @@ const Cart = () => {
           <h3>Grand Total: ${totalAmount.toFixed(2)}</h3>
           <Link to="/Shop">
   <button className="checkoutbtn">Go and shop again</button>
-</Link>        </div>
+</Link>    
+
+    </div>
       </div>
     </div>
   );

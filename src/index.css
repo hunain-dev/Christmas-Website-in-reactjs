@@ -1,14 +1,15 @@
-*{
-
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   background-color: whitesmoke;
   scrollbar-width: none;
+
 }
 
 ::selection {
@@ -20,7 +21,7 @@ html, body {
   display: none;
 }
 
-.main{
+.main {
   width: 100%;
 }
 
@@ -29,38 +30,33 @@ html, body {
   src: url(/public/assets/Fonts/KaushanScript-Regular.ttf);
 }
 
-
 @font-face {
   font-family: LuckiestGuy;
   src: url(/public/assets/Fonts/LuckiestGuy-Regular.ttf);
 }
-
 
 .Alert {
   height: 10vh;
   width: 50%;
   background-color: whitesmoke;
   border-radius: 3vw;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 1vw 1vw;
-  left: 50%;        /* 👈 beech me laya */
-  top: 10.4%;        /* 👈 beech me laya */
-  transform: translateX(-50%); /* 👈 center align horizontally */
+  left: 50%; 
+  top: 88%; 
+  transform: translateX(-50%);
 }
-
-
 
 .Alert p {
   text-align: center;
   font-family: actay;
   font-weight: 500;
-
 }
-.icon{
+.icon {
   background-color: #111318;
   height: 2.5vw;
   width: 2.6vw;
@@ -68,8 +64,6 @@ html, body {
   align-items: center;
   justify-content: center;
   border-radius: 3vw;
-  
-
 }
 .crossicon {
   color: white;
@@ -77,7 +71,7 @@ html, body {
   cursor: pointer;
   font-size: 1.4vw;
 }
-.Header{
+.Header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -86,10 +80,9 @@ html, body {
   z-index: 9;
   position: relative;
   background: linear-gradient(to right, #922226, #4c1c1e);
-
 }
 
-.Header .left h4{
+.Header .left h4 {
   display: flex;
   font-family: actay;
   font-weight: 500;
@@ -100,14 +93,11 @@ html, body {
 }
 
 .Header .left a {
-  text-decoration: none; 
+  text-decoration: none;
   color: white;
 }
 
-
-
-
-.Header .center{
+.Header .center {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,26 +106,39 @@ html, body {
 .Header .center a {
   text-decoration: none;
   color: white;
-  
 }
-.Header .center h3{
+.Header .center h3 {
   display: flex;
   font-family: actay;
   font-weight: 500;
   font-size: 1vw;
   align-items: center;
   justify-content: space-between;
-
 }
-.Header .right a{
+
+
+.Header .right {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Header .right a {
   font-family: actay;
   font-weight: 500;
-  font-size: 1.8vw;
+  font-size: 2vw;
   color: white;
   cursor: pointer;
-
 }
-.Footer{
+
+
+.Header .right .Menuicon {
+  font-size: 2vw;
+  opacity: 0;
+}
+
+
+.Footer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -143,7 +146,7 @@ html, body {
   justify-content: space-between;
 }
 
-.Footer .left h4{
+.Footer .left h4 {
   display: flex;
   font-family: actay;
   font-weight: 500;
@@ -153,104 +156,88 @@ html, body {
   gap: 1vw;
 }
 
-
-.Footer .center{
+.Footer .center {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2vw;
   text-decoration: none;
-
 }
-.Footer .center a{
+.Footer .center a {
   color: #111318;
   text-decoration: none;
 }
-.Footer .center h3{
-  display: flex;
-  font-family: actay;
-  font-weight: 500;
+.Footer .center h3 {
   font-size: 1vw;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.Footer .right{
+.Footer .right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.3vw;
   font-size: 1.3vw;
-
-}
-
-.Footer a{
-  color: #111318;
-
-}
-
-.Home{
-  width: 100%;
-  position: relative;
   
 }
 
-.Landingpage{
+.Footer a {
+  color: #111318;
+}
+
+.Home {
+  width: 100%;
+  position: relative;
+}
+
+.Landingpage {
   height: 84vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative ;
+  position: relative;
   background: linear-gradient(to right, #922226, #4c1c1e);
-
 }
 
-.landinginnertext{
+.landinginnertext {
   width: 75%;
   overflow: hidden;
   margin-bottom: 3vw;
-
 }
 
-.landinginnertexttop{
+.landinginnertexttop {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3vw;
   margin-top: 2vw;
-
 }
-.landinginnertexttop h2{
-font-weight: 500;
+.landinginnertexttop h2 {
+  font-weight: 500;
   font-family: KaushanScript;
   font-size: 2.4vw;
-color: white;
-
+  color: white;
 }
-.landinginnertextbottom{
+.landinginnertextbottom {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2vw;
-
-
 }
 
-.landinginnertextbottom h2{
+.landinginnertextbottom h2 {
   font-weight: 500;
   line-height: 6vw;
-    font-family: LuckiestGuy;
-    font-size: 6.3vw;
-    text-align: center;
+  font-family: LuckiestGuy;
+  font-size: 6.3vw;
+  text-align: center;
   color: white;
-  }
+}
 
-
-.landinginnertextend{
-  flex-direction: column  ;
+.landinginnertextend {
+  flex-direction: column;
   gap: 2vw;
 
   width: 75%;
@@ -258,407 +245,363 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.landinginnertextend h5{
+.landinginnertextend h5 {
   font-weight: 500;
-    font-family: LuckiestGuy;
-    font-size: 1.5vw;
-    text-align: center;
+  font-family: LuckiestGuy;
+  font-size: 1.5vw;
+  text-align: center;
   color: whitesmoke;
-  }
+}
 
-  .landinginnertextend button{
-    padding: 1vw 2vw;
-    background-color: whitesmoke;
-    border-radius: 2vw;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: actay;
-    cursor: pointer;
-    } 
-    
-    
-    
-    
-    .landinginnertextend a {
-      text-decoration: none;
-    
-    }
+.landinginnertextend button {
+  padding: 1vw 2vw;
+  background-color: whitesmoke;
+  border-radius: 2vw;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: actay;
+  cursor: pointer;
+}
 
+.landinginnertextend a {
+  text-decoration: none;
+}
 
-    .ChristmasGifts{
-      width: 100%;
-      margin-top: 7vw;
-   
-    }
+.ChristmasGifts {
+  width: 100%;
+  margin-top: 7vw;
+}
 
-    .ChristmasGiftstop {
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-    }
+.ChristmasGiftstop {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
+.ChristmasGiftstop h4 {
+  font-family: KaushanScript;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #922226;
+  margin-bottom: 1vw;
+}
 
-    .ChristmasGiftstop h4{
-      font-family:KaushanScript ;
-      font-weight: 500;
-      font-size: 2vw;
-      color: #922226;
-      margin-bottom: 1vw;
-    }
-    
-    .ChristmasGiftstop h2{
-      font-family:LuckiestGuy ;
-      font-weight: 500;
-      font-size: 6vw;
-      margin-bottom: 1vw;
-      line-height: 5.5vw;
-      color: #111318;
-      /* Justify content to the right */
-    }
+.ChristmasGiftstop h2 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 6vw;
+  margin-bottom: 1vw;
+  line-height: 5.5vw;
+  color: #111318;
+  /* Justify content to the right */
+}
 
-    .ChristmasGiftspic{
-      height: 70vh;
-      width: 80%;
-      margin: 3vw auto;
-    }
+.ChristmasGiftspic {
+  height: 70vh;
+  width: 80%;
+  margin: 3vw auto;
+}
 
-    .ChristmasGiftspic img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
+.ChristmasGiftspic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-    }
+.Featureproduct {
+  width: 100%;
+  padding: 1vw 1vw;
+  margin-bottom: 4vw;
+}
 
-    .Featureproduct{
-      width: 100%;
-      padding: 1vw 0.6vw;
-      margin-bottom: 4vw;
+.Featureproduct h2 {
+  font-family: KaushanScript;
+  font-weight: 500;
+  font-size: 2vw;
+}
 
+.Featureproduct h1 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 5vw;
+  margin-bottom: 4vw;
+}
 
-    }
+.featuredcard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .Featureproduct h2{
-      font-family:KaushanScript ;
-      font-weight: 500;
-      font-size: 2vw;
- 
-    }
+.carddetails {
+  width: calc(25% - 20px); /* 4 in one row with gap */
+}
 
-    .Featureproduct h1{
-      font-family:LuckiestGuy ;
-      font-weight: 500;
-      font-size: 5vw;
-      margin-bottom: 4vw;
- 
-    }
+.cardimage {
+  height: 75vh;
+  width: 100%;
+  margin-bottom: 1vw;
+  margin: 3vw 0;
+}
 
-    
-    .featuredcard {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    
-    .carddetails {
-      width: calc(25% - 20px); /* 4 in one row with gap */
-    }
-    
+.cardimage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-    .cardimage{
-      height: 75vh;
-      width: 100%;
-      margin-bottom: 1vw;
-      margin: 3vw 0;
+.carddetails h3 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.carddetails h4 {
+  font-family: actay;
+  font-weight: 500;
+  margin: 1vw 0;
+}
 
-   
-    }
+.carddetails button {
+  background-color: #111318;
+  color: whitesmoke;
+  padding: 1vw 2vw;
+  border-radius: 3vw;
+  cursor: pointer;
+}
 
-    .cardimage img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
+.Outfits {
+  width: 100%;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    }
+.Outfits .outfitsleft {
+  height: 100vh;
+  width: 35%;
+  padding: 0 0.5vw;
+}
 
-    .carddetails h3{
-    font-family:LuckiestGuy ;
-    font-weight: 500;
-    margin-bottom: 1vw;
-  
-    }
-    .carddetails h4{
-      font-family:actay ;
-      font-weight: 500;
-   margin: 1vw 0;    
-      }
+.Outfits .outfitsleft h5 {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.3vw;
+  margin-bottom: 1vw;
+  color: #922226;
+}
+.Outfits .outfitsleft h1 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 3vw;
+  margin-bottom: 2vw;
+  line-height: 3vw;
+}
+.Outfits .outfitsleft p {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.1vw;
+  margin-bottom: 1vw;
+}
 
-      .carddetails button{
-        background-color: #111318;
-        color: whitesmoke;
-        padding: 1vw 2vw;
-        border-radius: 3vw;
-        cursor: pointer;
-      
-        }
-    
+.Outfits .outfitsleft button {
+  padding: 1vw 2vw;
+  background-color: #922226;
+  border-radius: 2vw;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: actay;
+  margin-top: 3vw;
+  color: white;
+}
+.Outfits .outfitscenter {
+  height: 100vh;
+  width: 70%;
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-      .Outfits{
-        width: 100%;
-       margin-top: 6vw;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-      }
+.outfitscenterimage {
+  height: 100%;
+  width: 45%;
+}
 
-      
-      .Outfits .outfitsleft{
-        height: 100vh;
-        width: 35%;
-        padding: 0 0.5vw;
-      
-      }
+.outfitscenterimage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-      .Outfits .outfitsleft h5{
-        font-family: actay;
-        font-weight: 500;
-        font-size: 1.3vw;
-        margin-bottom: 1vw;
-        color: #922226;
- 
-      
-      }
-      .Outfits .outfitsleft h1{
-        font-family: LuckiestGuy;
-        font-weight: 500;
-        font-size: 3vw;
-        margin-bottom: 2vw;
-        line-height: 3vw;
+.Customerexpericnee {
+  width: 100%;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7vw;
+}
 
- 
-      
-      }
-      .Outfits .outfitsleft p{
-        font-family: actay;
-        font-weight: 500;
-        font-size: 1.1vw;
-        margin-bottom: 1vw;
- 
-      
-      }
+.Customerexpericneeleft {
+  height: 100%;
+  width: 30%;
+  padding: 1vw 1vw;
+}
+.Customerexpericneeleft h1 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 3vw;
+  margin-bottom: 1.5vw;
+}
+.Customerexpericneeleft p {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+}
 
-      .Outfits .outfitsleft button{
-        padding: 1vw 2vw;
-        background-color: #922226;
-        border-radius: 2vw;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: actay;
-        margin-top: 3vw;
-        color: white;
- 
-      
-      }
-      .Outfits .outfitscenter{
-        height: 100vh;
-        width: 70%;
-        padding: 0 2vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      
-      }
+.Customerexpericneesays {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
 
-      .outfitscenterimage{
-        height: 100%;
-        width: 45%;
-      }
+.Customerexpericneesayscard {
+  height: 100%;
+  padding: 0 1vw;
+}
 
-      .outfitscenterimage img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
+.Customerexpericneesayscard p {
+  font-family: actay;
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
+}
 
-      .Customerexpericnee{
-        width: 100%;
-        margin-top: 8vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 7vw;
-    
-      }
+.costumerimage {
+  height: 11vh;
+  width: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
-      .Customerexpericneeleft{
-        height: 100%;
-        width: 30%;
-        padding: 1vw 1vw;
+.costumerimage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-      }
-      .Customerexpericneeleft h1{
-        font-family: LuckiestGuy;
-        font-weight: 500;
-        font-size: 3vw;
-        line-height: 3vw;
-        margin-bottom: 1.5vw;
-      }
-      .Customerexpericneeleft p{
-        font-family: actay;
-        font-weight: 500;
-        font-size: 1.2vw;
-        margin-bottom: 2vw;
-      }
+.Shopscards {
+  width: 100%;
+  padding: 0 2vw;
+}
 
-      .Customerexpericneesays{
-        height: 100%;
-        width: 70%;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2vw;
-      }
+.Shopscardstop {
+  height: 15vh;
+  width: 100%;
+  padding: 3vw 1vw;
+}
 
-      .Customerexpericneesayscard{
-        height: 100%;
-        padding: 0 1vw;
+.Shopscardstop h2 {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
 
-      }
+.shopcarditem {
+  width: 100%;
+  margin-bottom: 3vw;
+}
 
-      .Customerexpericneesayscard p{
-        font-family: actay;
-        font-size: 1.3vw;
-        margin-bottom: 2vw;
-      }
+.shopitemcard {
+  height: 30vh;
+  width: 100%;
+}
 
-      .costumerimage{
-        height: 11vh;
-        width: 5vw;
-        border-radius: 50%;
-        overflow: hidden;
-      }
+.Ourpromises {
+  width: 100%;
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1vw;
+  margin-bottom: 5vw;
+}
 
-      .costumerimage img{
-       height: 100%;
-       width: 100%;
-       object-fit: cover;
-       object-position: center;
-      }
+.ourpromisesleft {
+  height: 100%;
+  width: 55%;
+}
+.ourpromisesleft h3 {
+  font-family: KaushanScript;
+  font-weight: 500;
+  font-size: 3vw;
+  color: #922226;
+}
 
-      .Shopscards {
-        width: 100%;
-        padding: 0 2vw;
-      
-      }
+.ourpromisesleft h4 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 6vw;
+  line-height: 6vw;
+  margin: 1vw 0;
+  margin-bottom: 3vw;
+}
+.ourpromisesleft p {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.1vw;
+  margin: 1vw 0;
+}
+.ourpromisesright {
+  height: 100%;
+  width: 32%;
+}
+.ourpromisesright img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-      .Shopscardstop{
-        height: 15vh;
-        width: 100%;
-        padding: 3vw 1vw;
+.Contactform {
+  width: 100%;
+  margin-top: 2vw;
+  padding: 1vw 1vw;
+}
 
+.contacttop {
+  width: 100%;
+}
 
-      }
+.contacttop h2 {
+  font-family: LuckiestGuy;
+  font-weight: 500;
+  font-size: 2.3vw;
+  line-height: 2.5vw;
+}
 
-      .Shopscardstop h2{
-       font-family: actay;
-       font-weight: 500;
-       font-size: 1.5vw;
-
-      }
-
-      .shopcarditem{
-        width: 100%;
-        margin-bottom: 3vw;
-    }
-
-    .shopitemcard{
-      height: 30vh;
-      width: 100%;
-
-    }
-
-    .Ourpromises{
-      width: 100%;
-      margin-top: 4vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1vw;
-      margin-bottom: 5vw;
-    }
-
-    .ourpromisesleft{
-      height: 100%;
-      width: 55%;
-    }
-    .ourpromisesleft h3{
-    font-family: KaushanScript;
-    font-weight: 500;
-    font-size: 3vw;
-    color: #922226;
-    }
-
-    .ourpromisesleft h4{
-      font-family: LuckiestGuy;
-      font-weight: 500;
-      font-size: 6vw;
-      line-height: 6vw;
-      margin: 1vw 0;
-      margin-bottom: 3vw;
-      }
-      .ourpromisesleft p{
-        font-family: actay;
-        font-weight: 500;
-        font-size: 1.1vw;
-        margin: 1vw 0;
-        }
-    .ourpromisesright{
-      height: 100%;
-      width: 32%;
-    }
-    .ourpromisesright img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-    .Contactform{
-      width: 100%;
-      margin-top: 2vw;
-      padding: 1vw 1vw;
-    }
-
-    .contacttop{
-      width: 100%;
-    }
-
-    .contacttop h2{
-    font-family:LuckiestGuy ;
-    font-weight: 500;
-    font-size: 2.3vw;
-    line-height: 2.5vw;
-
-    } 
-
-    .form{
-      width: 80%;
-      margin: 0 auto;
-      margin-top: 7vw;
-    }
-
+.form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7vw;
+}
 
 /* .container {
   max-width: 350px;
@@ -679,8 +622,6 @@ color: white;
 
 } */
 
-
-
 .form-container {
   width: 60%;
   padding: 20px;
@@ -688,7 +629,6 @@ color: white;
   margin: 0 auto;
   font-family: actay;
   font-weight: 500;
-
 }
 .form-group {
   margin-bottom: 15px;
@@ -699,7 +639,6 @@ label {
   font-weight: 500;
   font-family: actay;
   margin: 2vw 0;
-
 }
 input {
   width: 100%;
@@ -708,7 +647,6 @@ input {
   font-family: actay;
   border: none;
   padding: 2vw 2vw;
-
 }
 .black-btn {
   background-color: black;
@@ -726,7 +664,7 @@ input {
   color: whitesmoke;
 }
 
-.Shippingmethods{
+.Shippingmethods {
   width: 100%;
   display: flex;
   align-items: center;
@@ -736,99 +674,82 @@ input {
   margin-bottom: 5vw;
 }
 
-.shippingcard{
+.shippingcard {
   height: 35vh;
   width: 26%;
   border: 1px solid rgba(0, 0, 0, 0.136);
   border-radius: 2vw;
-   overflow: hidden;
+  overflow: hidden;
   padding: 1vw 1vw;
   margin: 2vw 0;
-
 }
-.shippingcard .icon{
-  font-size: 1vw ;
-  color:black;
-  margin-bottom: 1vw ;
+.shippingcard .icon {
+  font-size: 1vw;
+  color: black;
+  margin-bottom: 1vw;
   background: none;
- 
 }
 
-.shippingcard h4{
+.shippingcard h4 {
   font-weight: 400;
   font-size: 1.5vw;
   margin: 0.4vw 0;
- font-family:LuckiestGuy ;
+  font-family: LuckiestGuy;
 }
 
-.shippingcard h5{
+.shippingcard h5 {
   font-weight: 500;
   font-size: 1.2vw;
   margin: 0.4vw 0;
- font-family:actay ;
+  font-family: actay;
 }
 
-.shopdetails{
+.shopdetails {
   width: 100%;
   padding: 1vw 1vw;
   margin-top: 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
-
 }
 
-
-.shopdetails .left{
+.shopdetails .left {
   height: 100vh;
   width: 45%;
   overflow: hidden;
   border-radius: 1vw;
-
 }
 
-.shopdetails .left img{
+.shopdetails .left img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
-
 }
-.shopdetails .right{
+.shopdetails .right {
   height: 100%;
   width: 52%;
   padding: 4vw 1vw;
-
 }
 
-.shopdetails h1{
-  font-family:LuckiestGuy ;
+.shopdetails h1 {
+  font-family: LuckiestGuy;
   font-weight: 500;
   font-size: 2.3vw;
   margin-bottom: 1vw;
-
-
 }
 
-.shopdetails h3{
-  font-family:actay ;
+.shopdetails h3 {
+  font-family: actay;
   font-weight: 500;
   font-size: 1.6vw;
   margin-bottom: 2vw;
-
-
-
 }
 
-.shopdetails p{
-  font-family:actay ;
+.shopdetails p {
+  font-family: actay;
   font-weight: 500;
   font-size: 1.1vw;
-
-
-
 }
 
 .quantity {
@@ -847,7 +768,7 @@ input {
   height: 100%;
   width: 25%;
   border: none;
-  background:none;
+  background: none;
   border: 1px solid rgba(0, 0, 0, 0.363);
   font-size: 1.5vw;
   cursor: pointer;
@@ -863,104 +784,94 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Actay';
+  font-family: "Actay";
   font-size: 1.5vw;
-  
 }
 .quantity-value h1 {
   margin: 0;
-font-size: 2vw;
-
+  font-size: 2vw;
 }
 
-.addtocart{
+.addtocart {
   width: 100%;
   margin-top: 2vw;
   overflow: hidden;
 }
-.addtocart button{
- padding: 1vw 2vw;
- border: none;
- border-radius: 2vw;
- background-color: #D61616;
- color: white;
- cursor: pointer;
+.addtocart button {
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 2vw;
+  background-color: #d61616;
+  color: white;
+  cursor: pointer;
 }
 
-.categoryname{
+.categoryname {
   margin-top: 1.5vw;
   color: #111318;
   margin-bottom: 1vw;
 }
 
-.categoryname h5 span{
+.categoryname h5 span {
   color: red;
 }
-.categoryname h5{
+.categoryname h5 {
   font-weight: 500;
   font-size: 1vw;
   font-family: actay;
 }
 
-
-.shippingrules{
+.shippingrules {
   width: 100%;
   overflow: hidden;
   padding: 1vw 1.5vw;
 }
 
-.shippingrules h2{
+.shippingrules h2 {
   font-family: actay;
   font-weight: 500;
   font-size: 1.2vw;
   margin-bottom: 1vw;
-
 }
 
-
-.shippingrules li{
+.shippingrules li {
   font-family: actay;
   font-weight: 500;
   font-size: 1.2vw;
   margin: 1vw 0;
   color: #111318;
-
 }
 
-
-.gaurented{
+.gaurented {
   width: 100%;
   padding: 0.5vw 0;
   border: 1px solid rgba(0, 0, 0, 0.598);
 }
 
-.gaurented h2{
-
+.gaurented h2 {
   font-family: actay;
   font-weight: 500;
   font-size: 1.4vw;
   text-align: center;
 }
 
-.gaurented .methodsimages{
+.gaurented .methodsimages {
   height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.gaurented .methodsimages img{
+.gaurented .methodsimages img {
   height: 100%;
   width: 100%;
 }
 
-
-.Cart{
+.Cart {
   width: 100%;
 }
 
-
-.develreditem{
+.develreditem {
   width: 100%;
   margin-bottom: 2vw;
   margin-top: 2vw;
@@ -970,7 +881,7 @@ font-size: 2vw;
   padding: 0 4vw;
 }
 
-.develreditemleft{
+.develreditemleft {
   width: 66%;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.486);
@@ -985,21 +896,18 @@ font-size: 2vw;
   padding: 1vw 1vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.486);
 }
-.develreditemlefttop h3{
+.develreditemlefttop h3 {
   font-family: actay;
   font-weight: 500;
   font-size: 1.2vw;
 }
 
-
-.develreditemleftbottom{
+.develreditemleftbottom {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
-
 
 .cartrow {
   width: 100%;
@@ -1010,7 +918,7 @@ font-size: 2vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Set all columns to equal width */
+
 .cartrow > * {
   width: 25%;
   text-align: center;
@@ -1034,22 +942,20 @@ font-size: 2vw;
   object-position: center;
 }
 
-.develreditemright{
+.develreditemright {
   width: 28%;
   padding: 1vw 1vw;
   border: 1px solid rgba(0, 0, 0, 0.486);
-
 }
 
-.develreditemright h1{
-font-family: actay;
-font-weight: 500;
-font-size: 2vw;
-text-align: center;
-
+.develreditemright h1 {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 2vw;
+  text-align: center;
 }
 
-.totalprice{
+.totalprice {
   margin-top: 2vw;
   height: 15vh;
   width: 100%;
@@ -1058,16 +964,15 @@ text-align: center;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  border-bottom: 1px solid  black;
+  border-bottom: 1px solid black;
 }
 
-.totalprice p{
+.totalprice p {
   font-family: actay;
   font-weight: 500;
-
 }
 
-.develreditemright h3{
+.develreditemright h3 {
   font-family: actay;
   font-weight: 500;
   font-size: 1.2vw;
@@ -1077,7 +982,7 @@ text-align: center;
 .checkoutbtn {
   margin-top: 1vw;
   padding: 1vw 6.5vw;
-  background-color: #D51515;
+  background-color: #d51515;
   color: white;
   border: none;
   font-size: 1vw;
@@ -1085,636 +990,1363 @@ text-align: center;
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
   .Alert {
-    height: 10vh;
+    height:9vh;
     width: 95%;
     padding: 1vw 2vw;
-    left: 50%;       
-    top: 10%;
-    padding: 0 2vw;       
+   left: 50%; 
+  top: 90%; 
+    padding: 0 2vw;
+    position: fixed;
+    border-radius: 5vw;
+
   }
   .Alert p {
-    font-size: 3.6vw;
+    font-size: 3.2vw;
     line-height: 5.5vw;
-  
   }
-  .icon{
-    height: 10vw;
-    width: 14vw;
+  .icon {
+    height: 9vw;
+    width: 12vw;
     border-radius: 10vw;
-    
-  
   }
   .crossicon {
-    font-size: 4vw;
-  }
-  .Header{
-   opacity: 0;
-  
+    font-size: 3.5vw;
   }
 
-  .Landingpage{
-    height: 50vh;
-    margin-bottom: 5vw;
 
-  
+  .Header {
+    opacity: 1;
   }
-  .landinginnertext{
+  .Header .left h4 {
+    font-size: 4.1vw;
+    margin-top: 2vw;
+
+  }
+
+  .Header .center {
+    opacity: 0;
+  }
+  .Header .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5vw;
+    }
+  .Header .right a {
+    font-size: 6vw;
+  }
+  .Header .right .Carticon {
+    font-size: 6vw;
+    opacity: 0;
+  }
+
+  .Header .right .Menuicon {
+    font-size:6.7vw;
+    opacity: 1;
+    color: white;
+  } 
+  .sidebar {
+    top: 0;
+    right: 0;
     width: 100%;
-  
+    height: 80vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+    position: absolute;
   }
-  
-.landinginnertexttop{
-  margin-bottom: 4vw;
+  .sidebar a {
+    font-family: LuckiestGuy;
+    color: #111318;
+    font-weight: 500;
+    font-size:13vw;
+    line-height:13vw;
+    text-transform: uppercase;
 
-}
-.landinginnertexttop h2{
-    font-size: 5.5vw;
-  
+    }
+    .sidebar .Closemenu {
+      top: 5vw;
+      right:3vw;
+      font-size:10vw;
+      position: absolute;
+    }
+
+ 
+  .Landingpage {
+    height: 56vh;
+    margin-bottom: 5vw;
   }
-  .landinginnertextbottom{
-  
+  .landinginnertext {
+    width: 100%;
+  }
+
+  .landinginnertexttop {
+    margin-bottom: 6vw;
+  }
+  .landinginnertexttop h2 {
+    font-size: 5.8vw;
+  }
+  .landinginnertextbottom {
+    margin-bottom: 4vw;
+  }
+  .landinginnertextbottom h2 {
+    line-height: 9vw;
+    font-size: 9.5vw;
+  }
+  .landinginnertextend {
+    gap: 6vw;
+    width: 75%;
+  }
+  .landinginnertextend h5 {
+    font-size: 3.9vw;
+  }
+
+  .landinginnertextend button {
+    padding: 3vw 9vw;
+  }
+
+  .ChristmasGifts {
+    width: 100%;
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 2vw;
+  }
+
+  .ChristmasGiftstop {
+    width: 100%;
+    margin: 2vw auto;
+    margin-bottom: 2vw;
+  }
+
+  .ChristmasGiftstop h4 {
+    font-size: 5vw;
     margin-bottom: 3vw;
-  
-  
+    text-align: center;
   }
-  .landinginnertextbottom h2{
-    line-height: 10vw;
-      font-size:9vw;
-    }
-    .landinginnertextend{
-      gap: 6vw;
-      width: 75%;
-
-
-    
-    }
-    .landinginnertextend h5{
-        font-size: 3.5vw;
-      }
-    
-      .landinginnertextend button{
-        padding: 2vw 6vw;
-     
-        } 
-
-
-        .ChristmasGifts{
-          width: 100%;
-          margin-top: 8vw;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-           flex-direction: column;
-           flex-wrap: wrap;
-           padding: 0 2vw;
-       
-        }
-        
-    .ChristmasGiftstop {
-      width: 100%;
-      margin: 2vw auto;
-      margin-bottom: 2vw;
-    }
-    
-    .ChristmasGiftstop h4{
-      font-size: 5vw;
-      margin-bottom: 3vw;
-      text-align: center;
-    }
-    .ChristmasGiftstop h2{
+  .ChristmasGiftstop h2 {
     font-size: 7vw;
     text-align: center;
-      margin-bottom: 2vw;
-      line-height: 6.5vw;
-    }
-
-      
-    .ChristmasGiftspic{
-      height: 45vh;
-      width: 100%;
-    }
-
-    
-    .Featureproduct{
-      margin-bottom: 4vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-       flex-direction: column;
-      margin-top: 9vw;
-
-    }
-    .Featureproduct h2{
-      font-size: 6vw;
- 
-    }
-    .Featureproduct h1{
-      font-size: 8vw;
-      margin-bottom: 9vw;
- 
-    }
-
-       
-    .featuredcard {
-      width: 100%;
-      gap: 20px;
-      display: flex;
-      align-items:center;
-      justify-content: center;
-       flex-direction: column;
-    }
-    .carddetails {
-      width: calc(100% - 20px); 
-      text-align: center;
-      margin: 3vw 0;
-    }
-
-    .cardimage{
-      height: 65vh;
-      margin-bottom: 3vw;
-
-   
-    }
-    .carddetails h3{
-      margin-bottom: 2vw;
-      font-size: 6vw;
-    
-      }
-      .carddetails h4{
-     font-size: 5.5vw;
-     margin-bottom: 3vw;
-   
-        }
-        .carddetails button{
-          padding: 3vw 9vw;
-        
-          }
-          .Outfits{
-            width: 100%;
-           margin-top: 10vw;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-direction: column;
-           padding: 0 2vw;
-          }
-        
-          .Outfits .outfitsleft{
-            height: 48vh;
-            width: 100%;
-            padding: 2vw 2vw;
-          
-          }
-    
-          .Outfits .outfitsleft h5{
-            font-size: 5vw;
-            margin-bottom: 3vw;
-     
-          
-          }
-          .Outfits .outfitsleft h1{
-            font-size: 5vw;
-            margin-bottom: 5vw;
-            line-height: 5vw;
-    
-     
-          
-          }
-          .Outfits .outfitsleft p{
-            font-size: 4vw;
-            margin-bottom: 1vw;
-            line-height: 6vw;
-     
-          
-          }
-          
-      .Outfits .outfitsleft button{
-        padding: 3vw 10vw;
-        border-radius: 5vw;
-        margin-top: 4vw;
- 
-      
-      }
-      .Outfits .outfitscenter{
-        height: 35vh;
-        width: 100%;
-      
-      }
-      .outfitscenterimage{
-        width: 100%;
-        margin: 0 1vw;
-      }
-      .Customerexpericnee{
-        width: 100%;
-        margin-top: 15vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 13vw;
-        padding: 0 2vw;
-
-
-      }
-
-      .Customerexpericneeleft{
-        height: 100%;
-        width: 100%;
-        padding: 1vw 1vw;
-        margin-bottom: 5vw;
-
-      }
-      .Customerexpericneeleft h1{
-        font-size: 7vw;
-        line-height: 6vw;
-        margin-bottom: 3vw;
-      }
-      
-      .Customerexpericneeleft p{
-        font-size: 3vw;
-        margin-bottom: 2vw;
-      }
-      
-    
-
-      .Customerexpericneesays{
-        height: 100%;
-        width: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        gap: 7vw;
-        flex-direction: column;
-      }
-      .Customerexpericneesayscard{
-        padding: 0 3vw;
-
-      }
-      
-      .Customerexpericneesayscard p{
-        font-size: 4vw;
-        margin-bottom: 6vw;
-      }
-      .costumerimage{
-        width: 20vw;
-      }
-
-
-      .Footer{
-        opacity: 0;
-      }
-
-      .Shopscardstop{
-        height: 13vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-      }
-
-      .Shopscardstop h2{
-        font-size: 5vw;
- 
-       }
-       .shopdetails{
-        width: 100%;
-        padding: 1vw 2vw;
-        margin-top: 3vw;
-        flex-direction: column;
-      
-      
-      
-      }
-      .Cart{
-        width: 100%;
-      }
-      
-      
-.develreditem{
-  width: 100%;
-  flex-direction: column;
-}
-.develreditemleft{
-  width: 100%;
-  margin-bottom: 8vw;
-}
-
-.develreditemlefttop h3{
-  font-size: 3.5vw;
-}
-
-
-
-
-.cartrow {
-  margin: 2vw 0;
-}
-
-
-
-.cartrow .develreditemimage {
-  height: 8vh;
-  width: 20%;
-  margin-bottom: 2vw;
-}
-
-
-
-
-.develreditemright{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-}
-
-.develreditemright h1{
-  font-size: 4vw;
-  
+    margin-bottom: 2vw;
+    line-height: 6.5vw;
   }
+
+  .ChristmasGiftspic {
+    height: 45vh;
+    width: 100%;
+  }
+
+  .Featureproduct {
+    margin-bottom: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9vw;
+  }
+  .Featureproduct h2 {
+    font-size: 6vw;
+  }
+  .Featureproduct h1 {
+    font-size: 8vw;
+    margin-bottom: 9vw;
+  }
+
+  .featuredcard {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .carddetails {
+    width: calc(100% - 20px);
+    text-align: center;
+    margin: 3vw 0;
+  }
+
+  .cardimage {
+    height: 65vh;
+    margin-bottom: 3vw;
+  }
+  .carddetails h3 {
+    margin-bottom: 2vw;
+    font-size: 6vw;
+  }
+  .carddetails h4 {
+    font-size: 5.5vw;
+    margin-bottom: 3vw;
+  }
+  .carddetails button {
+    padding: 3vw 9vw;
+  }
+  .Outfits {
+    width: 100%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2vw;
+  }
+
+  .Outfits .outfitsleft {
+    height: 48vh;
+    width: 100%;
+    padding: 1vw 1vw;
+  }
+
+  .Outfits .outfitsleft h5 {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  }
+  .Outfits .outfitsleft h1 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+    line-height: 5vw;
+  }
+  .Outfits .outfitsleft p {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    line-height: 6vw;
+  }
+
+  .Outfits .outfitsleft button {
+    padding: 3vw 10vw;
+    border-radius: 5vw;
+    margin-top: 4vw;
+  }
+  .Outfits .outfitscenter {
+    height: 35vh;
+    width: 100%;
+  }
+  .outfitscenterimage {
+    width: 100%;
+    margin: 0 1vw;
+  }
+  .Customerexpericnee {
+    width: 100%;
+    margin-top: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 13vw;
+    padding: 0 2vw;
+  }
+
+  .Customerexpericneeleft {
+    height: 100%;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 5vw;
+  }
+  .Customerexpericneeleft h1 {
+    font-size: 7vw;
+    line-height: 6vw;
+    margin-bottom: 3vw;
+  }
+
+  .Customerexpericneeleft p {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .Customerexpericneesays {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    flex-direction: column;
+  }
+  .Customerexpericneesayscard {
+    padding: 0 3vw;
+  }
+
+  .Customerexpericneesayscard p {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .Footer {
+    flex-direction: column;
+    margin-top: 7vw;
+  }
+
+  .Footer .left h4 {
+    font-size: 5.2vw;
+    margin-bottom: 6vw;
+
+  }
+  .Footer .left a {
+    text-decoration: none;
+  }
+
+  .Footer .center {
+    gap: 4vw;
+    flex-direction: column;
+    margin-bottom: 8vw;
+  }
+
+  .Footer .center h3 {
+    font-weight: 500;
+    font-size: 4.3vw;
+    font-family: actay;
+  }
+
+  .Footer .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6vw;
+    font-size: 6vw;
+  }
+
+  .costumerimage {
+    width: 20vw;
+  }
+
+  .Shopscardstop {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Shopscardstop h2 {
+    font-size: 5vw;
+  }
+
   
+  .shopdetails {
+    width: 100%;
+    padding: 1vw 2vw;
+    margin-top: 3vw;
+    flex-direction: column;
+  }
 
 
-  .totalprice{
+  .Cart {
+    width: 100%;
+  }
+
+  .develreditem {
+    width: 100%;
+    flex-direction: column;
+  }
+  .develreditemleft {
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+
+  .develreditemlefttop h3 {
+    font-size: 3.5vw;
+  }
+
+  .cartrow {
+    margin: 2vw 0;
+  }
+
+  .cartrow .develreditemimage {
+    height: 8vh;
+    width: 20%;
+    margin-bottom: 2vw;
+  }
+
+  .develreditemright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .develreditemright h1 {
+    font-size: 4vw;
+  }
+
+  .totalprice {
     margin-top: 1vw;
     height: 10vh;
     width: 100%;
     padding: 6vw 0.2vw;
     align-items: center;
   }
-  
 
-  .totalprice p{
+  .totalprice p {
     font-size: 4vw;
+  }
+
+  .develreditemright h3 {
+    font-size: 4vw;
+    margin: 5vw 0;
+  }
+
+  .checkoutbtn {
+    margin-top: 3vw;
+    padding: 2vw 13vw;
+    font-size: 4vw;
+  }
+
+  .shopdetails .left {
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+  .shopdetails .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4vw 1vw;
+  }
+  .shopdetails h1 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .shopdetails h3 {
+    font-size: 4.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .shopdetails p {
+    text-align: center;
+    font-size: 3.3vw;
+    margin-bottom: 6vw;
+  }
+
+  .quantity {
+    height: 6vh;
+    width: 100%;
+  }
+
+  .quantity button {
+    height: 100%;
+    width: 40%;
+    font-size: 7vw;
+  }
+
+  .quantity-value h1 {
+    font-size: 8vw;
+    margin-top: 6vw;
+  }
+
+  .addtocart {
+    margin-top: 8vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .addtocart button {
+    padding: 4vw 10vw;
+  }
+
+  .categoryname {
+    margin-top: 8vw;
+    color: #111318;
+    margin-bottom: 2vw;
+  }
+  .categoryname h5 span {
+    color: red;
+    font-size: 5vw;
+  }
+  .categoryname h5 {
+    font-weight: 500;
+    font-size: 6vw;
+    font-family: actay;
+  }
+  .shippingrules {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw 1.5vw;
+    flex-direction: column;
+  }
+
+  .shippingrules h2 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  .shippingrules li {
+    font-size: 3.5vw;
+    margin: 2vw 0;
+  }
+
+  .gaurented {
+    width: 100%;
+    padding: 0.5vw 0;
+    margin-top: 4vw;
+    border: 1px solid rgba(0, 0, 0, 0.598);
+  }
+  .gaurented h2 {
+    font-size: 4vw;
+  }
+  .gaurented .methodsimages {
+    height: 20vh;
+    width: 100%;
+    margin-top: 3vw;
+  }
+
+  .Ourpromises {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10vw;
+  }
+
+  .ourpromisesleft {
+    height: 100%;
+    margin-bottom: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ourpromisesleft h3 {
+    font-size: 10vw;
+  }
+  .ourpromisesleft h4 {
+    font-size: 6vw;
+    text-align: center;
+    line-height: 6vw;
+  }
+  .ourpromisesleft p {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .ourpromisesright {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Contactform {
+    width: 100%;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    margin-top: 7vw;
+  }
+  .contacttop {
+    width: 100%;
+    padding: 0 3vw;
+  }
+
+  .contacttop h2 {
+    font-size: 5.3vw;
+    line-height: 5.3vw;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10vw;
+  }
+  .form-group {
+    margin-bottom: 10vw;
+    margin-top: 6vw;
+  }
+
+  input {
+    padding: 5vw 5vw;
+    margin-top: 3vw;
+  }
+
+  .black-btn {
+    padding: 23px 25px;
+    font-size: 17px;
+  }
+
+  .Shippingmethods {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    padding: 0 3vw;
+  }
+  .shippingcard {
+    height: 23vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 5vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .shippingcard h4 {
+    font-size: 7.1vw;
+  }
+  .shippingcard h5 {
+    font-size: 3.3vw;
+    text-align: center;
+  }
+
+  .shippingcard .icon {
+    font-size: 5vw;
+    height: 4vh;
+    width: 8.5vw;
+    color: black;
+    margin-bottom: 4vw;
+    background: none;
+  }
+}
+
+ @media (min-width: 768px) and (max-width: 1024px){
+
+
   
+  .Header {
+    opacity: 1;
+  }
+  .Header .left h4 {
+    font-size: 3vw;
+    margin-top: 2vw;
+
+  }
+
+  .Header .center {
+    opacity: 0;
+  }
+  .Header .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5vw;
+    }
+  .Header .right a {
+    font-size: 6vw;
+  }
+  .Header .right .Carticon {
+    font-size: 4vw;
+    opacity: 0;
+  }
+
+  .Header .right .Menuicon {
+    font-size:5.7vw;
+    opacity: 1;
+    color: white;
+  } 
+  .sidebar {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+    position: absolute;
+  }
+  .sidebar a {
+    font-family: LuckiestGuy;
+    color: #111318;
+    font-weight: 500;
+    font-size:11vw;
+    line-height:10vw;
+    text-transform: uppercase;
+
+    }
+    .sidebar .Closemenu {
+      top: 5vw;
+      right: 3vw;
+      font-size:6vw;
+      position: absolute;
+    }
+
+  .Alert {
+    height:10vh;
+    width: 90%;
+   left: 50%; 
+  top: 89%; 
+    border-radius: 8vw;
+
+  }
+  .Alert p {
+    font-size: 3vw;
+    line-height: 5vw;
+    padding: 0 2vw;
+  }
+  .icon {
+    height: 7vw;
+    width: 10vw;
+    border-radius: 10vw;
+  }
+  .crossicon {
+    font-size: 3.1vw;
+  }
+  .Landingpage {
+    height: 80vh;
+    margin-bottom: 5vw;
+  }
+
+  .landinginnertext {
+    width: 90%;
+  }
+
+  .landinginnertexttop {
+    margin-bottom: 5vw;
+  }
+  .landinginnertexttop h2 {
+    font-size: 5vw;
+  }
+  .landinginnertextbottom {
+    margin-bottom: 5vw;
+    
+  }
+  .landinginnertextbottom h2 {
+    font-size: 9vw;
+    line-height: 9vw;
+  }
+  .landinginnertextend {
+    gap: 6vw;
+    width: 100%;
+  }
+  .landinginnertextend h5 {
+    font-size: 4vw;
+  }
+
+
+  .landinginnertextend button {
+    padding: 3vw 9vw;
+    font-size: 2.8vw;
+  }
+
+  .ChristmasGifts {
+    margin-top: 8vw;
+    padding: 6vw 2vw;
+  }
+
+  .ChristmasGiftstop {
+    width: 100%;
+    margin: 1vw auto;
+    margin-bottom: 3vw;
+    text-align: center;
+  }
+
+
+  .ChristmasGiftstop h4 {
+    font-size: 4.2vw;
+    margin-bottom: 3vw;
+  }
+
+  .ChristmasGiftstop h2 {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+    line-height: 6.2vw;
+  }
+
+  .ChristmasGiftspic {
+    height: 60vh;
+  width: 100%;
+
+
+  }
+  .Featureproduct {
+    padding: 3vw 0.6vw;
+    margin-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+
+  .Featureproduct h2 {
+    font-size: 4vw;
   }
   
-.develreditemright h3{
-  font-size: 4vw;
-  margin: 5vw 0;
+.Featureproduct h1 {
+  font-size: 6.5vw;
+  margin-bottom: 9vw;
+}
+.featuredcard {
+  display: grid;
+  gap: 4px;
+  padding: 0 1vw;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.checkoutbtn {
-  margin-top: 3vw;
-  padding: 2vw 13vw;
-  font-size: 4vw;
+.carddetails {
+  width: calc(100% - 10px); 
+  margin-bottom: 2vw;
+}
+.cardimage {
+  height: 40vh;
+  margin-bottom: 2vw;
 }
 
-.shopdetails .left{
-  height: 60vh;
+
+.carddetails h3 {
+  margin-top: 6vw;
+  font-size: 3.2vw;
+}
+
+.carddetails h4 {
+  margin: 2vw 0;
+  font-size: 3vw;
+}
+.carddetails button {
+  padding: 2vw 5vw;
+  border-radius: 5vw;
+  font-size: 2vw;
+}
+
+.Outfits {
+  height: 100vh;
   width: 100%;
- margin-bottom: 8vw;
+  margin-top: 6vw;
+  flex-direction: column;
+  margin-bottom: 4vw;
+}
+
+
+.Outfits .outfitsleft {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1vw 3vw;
+  margin-bottom: 3vw;
+  margin-top: 4vw;
+}
+
+.Outfits .outfitsleft h5 {
+  font-size: 4vw;
+  margin-bottom: 2vw;
+}
+.Outfits .outfitsleft h1 {
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  line-height: 4.5vw;
+  text-align: center;
+}
+
+.Outfits .outfitsleft p {
+  font-size: 2.5vw;
+  margin-bottom: 1vw;
+  text-align: center;
+  line-height: 4.7vw;
+}
+
+.Outfits .outfitsleft button {
+  padding: 1.6vw 4vw;
+  font-size: 2.2vw;
 
 }
-.shopdetails .right{
+
+.Outfits .outfitscenter {
+  height: 50vh;
+  width: 100%;
+  padding: 2vw 2vw;
+  gap: 1vw;
+
+}
+.outfitscenterimage {
+  width: 100%;
+}
+
+
+.Customerexpericnee {
+  width: 100%;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 7vw;
+}
+.Customerexpericneeleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 2vw 1vw;
+  margin-bottom: 4vw;
+}
+
+.Customerexpericneeleft h1 {
+  font-size: 5vw;
+  line-height: 4.5vw;
+  margin-bottom: 3vw;
+}
+
+.Customerexpericneeleft p {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+.Customerexpericneesays {
   height: 100%;
+  width: 90%;
+  display: flex;
+  padding: 0 1vw;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+
+.Customerexpericneesayscard {
+  height: 100%;
+  padding: 0 1vw;
+}
+
+.Customerexpericneesayscard p {
+  font-size: 2vw;
+  margin-bottom: 4vw;
+}
+.costumerimage {
+  height: 12vh;
+  width: 14vw;
+}
+
+
+.Ourpromises {
+  width: 100%;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 1vw;
+  margin-bottom: 5vw;
+}
+
+.ourpromisesleft {
+  width: 55%;
+}
+.ourpromisesleft h3 {
+  font-size: 5vw;
+  margin-bottom: 1vw;
+}
+.ourpromisesleft h4 {
+  font-size: 6.5vw;
+  line-height: 6.2vw;
+  margin-bottom: 3vw;
+}
+.ourpromisesleft p {
+  font-size: 1.3vw;
+}
+
+.ourpromisesright {
+  width: 43%;
+}
+
+.Contactform {
+  width: 100%;
+  padding: 2vw 1vw;
+}
+
+.contacttop {
+  width: 100%;
+  padding: 2vw 0;
+}
+.contacttop h2 {
+  font-size: 3vw;
+  line-height: 3.7vw;
+}
+
+
+.form {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  padding: 40px;
+  margin-top: 10vw;
+}
+.form-group {
+  margin-bottom: 7vw;
+  margin-top: 3vw;
+  font-size: 3.3vw;
+}
+
+input {
+  padding: 4vw 2vw;
+  margin-top: 3vw;
+}
+
+.black-btn {
+  padding: 25px 25px;
+  font-size: 3vw;
+}
+.Shippingmethods {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10vw;
+  margin-bottom: 11vw;
+  padding: 0 1vw;
+  gap: 3vw;
+}
+
+.shippingcard {
+  height: 22vh;
   width: 100%;
   display: flex;
-  align-items: center;justify-content: center;
+  margin-bottom: 3vw;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-  padding: 4vw 1vw;
+}
+
+.shippingcard h4 {
+  font-size: 3.2vw;
+}
+.shippingcard h5 {
+  font-size: 1.9vw;
+}
+
+.shippingcard .icon {
+  height: 3.3vh;
+  width: 9vw;
 
 }
-.shopdetails h1{
+
+
+.Footer {
+  flex-direction: column;
+  margin-top: 7vw;
+}
+
+.Footer .left h4 {
   font-size: 5vw;
-  margin-bottom: 4vw;
-
-
-}
-
-.shopdetails h3{
-  font-size: 4.5vw;
   margin-bottom: 3vw;
 
-
-
+}
+.Footer .left a {
+  text-decoration: none;
 }
 
-.shopdetails p{
-  text-align: center;
-  font-size: 3.3vw;
-  margin-bottom: 6vw;
-
-
-
+.Footer .center {
+  gap: 3vw;
+  flex-direction: column;
+  margin-bottom: 5vw;
 }
+
+.Footer .center h3 {
+  font-weight: 500;
+  font-size: 3.2vw;
+  font-family: actay;
+}
+
+.Footer .right {
+
+  gap: 3vw;
+  font-size: 3.5vw;
+}
+.shopdetails {
+  width: 100%;
+  padding: 1vw 1vw;
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+}
+.shopdetails .left {
+  height: 70vh;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+
+.shopdetails .right {
+  margin-top: 5vw;
+  height: 100%;
+  width: 100%;
+  padding: 5vw 1vw;
+}
+
+.shopdetails h1 {
+  font-size: 4vw;
+  margin-bottom: 3vw;
+}
+.shopdetails h3 {
+  font-size: 2.6vw;
+  margin-bottom: 3vw;
+}
+
+.shopdetails p {
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
 
 .quantity {
-  height: 6vh;
-  width: 100%;
+  height: 5vh;
+  width: 35%;
+  margin-top: 1vw;
+  border-radius: 5px;
 }
 
 
 .quantity button {
+  width: 25%;
+  font-size: 3.4vw;
+}
+
+.quantity-value {
   height: 100%;
-  width: 40%;
-  font-size: 7vw;
+  width: 50%;
+  margin-top: 3vw;
+  font-size: 2vw;
+  
 }
 
-.quantity-value h1 {
-font-size: 8vw;
-margin-top: 6vw;
 
+.addtocart {
+  width: 100%;
+  margin-top: 2vw;
+  padding: 2vw 2vw;
+}
+.addtocart button {
+  padding: 2vw 7vw;
+  font-size: 2vw;
+}
+.categoryname {
+  margin-top: 2.5vw;
+  color: #111318;
+  margin-bottom: 3vw;
 }
 
-.addtocart{
-  margin-top: 8vw;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.categoryname h5 span {
+  color: red;
+}
+.categoryname h5 {
+  font-size: 3.5vw;
+}
+.shippingrules {
+  padding: 2vw 2vw;
+  margin-bottom: 5vw;
+}
+.shippingrules h2 {
+  font-size: 3vw;
+  margin-bottom: 3vw;
 }
 
-.addtocart button{
-  padding: 4vw 10vw;
+.shippingrules li {
+  font-size: 2.2vw;
+  margin: 1.5vw 0;
+}
+
+.gaurented {
+  width: 100%;
+  padding: 2vw 2vw;
+}
+.gaurented h2 {
+  font-size: 3vw;
+}
+
+.gaurented .methodsimages {
+  height: 28vh;
+  margin-top: 3vw;
+}
+
+  
+  .Cart {
+    width: 100%;
+  }
+
+  .develreditem {
+    width: 100%;
+    flex-direction: column;
+    padding: 2vw 4vw;
+  }
+  .develreditemleft {
+    width: 100%;
+    margin-bottom: 9vw;
+  }
+
+  .develreditemlefttop h3 {
+    font-size: 3vw;
+  }
+
+  .cartrow {
+    margin: 3vw 0;
+  }
+
+  .cartrow .develreditemimage {
+    height: 9vh;
+    width: 20%;
+  }
+
+  .develreditemright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .develreditemright h1 {
+    font-size: 4vw;
+  }
+
+  .totalprice {
+    margin-top: 1vw;
+    width: 100%;
+    padding: 5vw 0.2vw;
+    align-items: center;
+  }
+
+  .totalprice p {
+    font-size: 3.5vw;
+  }
+
+  .develreditemright h3 {
+    font-size: 3vw;
+    margin: 3vw 0;
+  }
+
+  .checkoutbtn {
+    margin-top: 3vw;
+    padding: 2vw 11vw;
+    font-size: 3vw;
+  }
  }
 
- .categoryname{
-  margin-top: 8vw;
-  color: #111318;
-  margin-bottom: 2vw;
- 
+
+ @media (min-width: 1025px) and (max-width: 1280px){
+
+
+  .Alert {
+    height: 11vh;
+    width: 50%;
+    padding: 1vw 1vw;
+  }
+
+  .Alert p {
+    font-size: 1.4vw;
+  }
+  
+.Header .left h4 {
+  font-size: 1.6vw;
 }
-.categoryname h5 span{
-  color: red;
-  font-size: 5vw;
+.Header .center h3 {
+  font-size: 1.4vw;
 }
-.categoryname h5{
-  font-weight: 500;
-  font-size: 6vw;
-  font-family: actay;
+.Header .right a {
+  font-size: 2.4vw;
 }
-.shippingrules{
+
+.cardimage {
+  height: 53vh;
+}
+.Outfits {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6vw 1.5vw;
-  flex-direction: column;
+  margin-top: 6vw;
+  padding: 0 1vw;
 }
 
-
-
-.shippingrules h2{
-  font-size: 5vw;
-  margin-bottom: 4vw;
-
-}
-.shippingrules li{
-  font-size: 3.5vw;
-  margin: 2vw 0;
+.Outfits .outfitsleft {
+  height: 80vh;
+  width: 60%;
+  padding: 0 0.5vw;
 
 }
 
-.gaurented{
-  width: 100%;
-  padding: 0.5vw 0;
-  margin-top: 4vw;
-  border: 1px solid rgba(0, 0, 0, 0.598);
-
-}
-.gaurented h2{
-
-  font-size: 4vw;
-}
-.gaurented .methodsimages{
-  height: 20vh;
-  width: 100%;
+.Outfits .outfitsleft h5 {
+  font-size: 2.3vw;
   margin-top: 3vw;
+}
 
+.Outfits .outfitsleft h1 {
+  font-size: 3.4vw;
+  margin-bottom: 2vw;
+  line-height: 3.3vw;
+}
+.Outfits .outfitsleft p {
+  font-size: 1.6vw;
+}
+
+.Outfits .outfitsleft button {
+  padding: 1.5vw 3vw;
+  margin-top: 3vw;
+}
+.Outfits .outfitscenter {
+  height: 70vh;
+  width: 100%;
+  padding: 0 0vw;
+}
+
+.Customerexpericnee {
+  width: 100%;
+  margin-top: 8vw;
+  margin-bottom: 7vw;
+}
+.Customerexpericneeleft p {
+  font-size: 1.3vw;
 }
 
 
-.Ourpromises{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        margin-bottom: 10vw;
-      }
-
-      .ourpromisesleft{
-        height: 100%;
-        margin-bottom: 7vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-      }
-      .ourpromisesleft h3{
-        font-size: 10vw;
-        }
-        .ourpromisesleft h4{
-          font-size: 6vw;
-          text-align: center;
-          line-height: 6vw;
-          }
-          .ourpromisesleft p{
-            font-size: 3vw;
-            text-align: center;
-            }
-            .ourpromisesright{
-              height: 100%;
-              width: 100%;
-            }
-
-
-            .Contactform{
-              width: 100%;
-              margin-top: 3vw;
-              margin-bottom: 5vw;
-              margin-top:7vw;
-            }
-            .contacttop{
-              width: 100%;
-              padding: 0 3vw;
-          
-            }
-
-            .contacttop h2{
-              text-align: center;
-              font-size:5.4vw;
-              line-height: 6vw;
-          
-              } 
-        
-    .form{
-      width: 100%;
-    }
-   
-
-    .form-container {
-      width: 100%;
-      padding: 20px;
-      margin-top: 10vw;
-    }
-    .form-group {
-      margin-bottom: 10vw;
-      margin-top: 6vw;
-    }
-
-    input {
-      padding: 5vw 5vw;
-      margin-top: 3vw;
-    
-    }
-
-    .black-btn {
-      padding: 23px 25px;
-      font-size: 17px;
-    }
-
-    .Shippingmethods{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      flex-direction: column;
-      margin-top: 10vw;
-      margin-bottom: 10vw;
-      padding: 0 3vw;
-
-    }
-    .shippingcard{
-      height: 23vh;
-      width: 100%;
-      display: flex;
-      margin-bottom: 5vw;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-    
-    }
-
-    .shippingcard h4{
-      font-size: 7.1vw;
-    }
-    .shippingcard h5{
-      font-size: 3.3vw;
-     text-align: center;
-    }
-
-    .shippingcard .icon{
-      font-size: 5vw;
-      height: 4vh;
-      width: 8.5vw;
-      color:black;
-      margin-bottom: 4vw;
-      background: none;
-
-     
-    }
+.Customerexpericneesays {
+  height: 100%;
+  width: 70%;
+  padding: 1vw 1vw;
 }
 
-/* @media (min-width: 768px) and (max-width: 1024px){}
-@media (min-width: 1025px) and (max-width: 1280px){}    
-@media (min-width: 1281px) and (max-width: 1536px){} */
+.costumerimage {
+  height: 11.5vh;
+  width: 7vw;
+}
+
+.Footer .left h4 {
+  font-size: 1.6vw;
+  text-decoration: none;
+  font-family: Actay;
+  font-weight: 500;
+}
+.Footer .left a {
+  text-decoration: none;
+
+}
+
+.Footer .center h3 {
+  font-size: 1.4vw;
+  font-family: Actay;
+  font-weight: 500;
+}
+.Footer .right {
+
+  gap: 1.7vw;
+  font-size: 1.8vw;
+  
+}
+ }   
+
+
