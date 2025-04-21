@@ -1,7 +1,7 @@
 import React from 'react'
 import Landingpage from '../Home/Landingpage'
 import Contactform from './Contactform'
-import Shippingmethods from './shippingmethods'
+import Shippingmethods from '../Contact/Shippingmethods'
 const Contact = () => {
 
   const Contacts = {
