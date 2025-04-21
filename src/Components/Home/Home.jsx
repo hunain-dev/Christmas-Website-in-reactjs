@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Landingpage from './Landingpage';
 import ChristmasGifts from './ChristmasGifts';
 import Featureproduct from './Featureproduct';
-import Outfits from './outfits';
+import Outfits from './Outfits';
 import Customerexpericnee from './Customerexpericnee';
 import Alert from './Alert';
 const Home = () => {
