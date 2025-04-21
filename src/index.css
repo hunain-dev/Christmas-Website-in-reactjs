@@ -169,6 +169,8 @@ justify-content: center;
 }
 .Footer .center h3 {
   font-size: 1vw;
+  font-family: Actay;
+  font-weight: 500;
 }
 
 .Footer .right {
